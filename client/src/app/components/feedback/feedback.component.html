@@ -1,0 +1,13 @@
+<h1 class="page-header">Feedback</h1>
+
+<!-- Custom Success/Error Message 
+<div class="row show-hide-message">
+  <div [ngClass]="messageClass">
+    {{ message }}
+  </div>
+</div>-->
+<!-- New Post Button -->
+<button type="button" name="button" class="btn btn-warning" *ngIf="!newPost" (click)="newForm()">New FeedBack</button>
+
+<!-- Reload Button -->
+<button [disabled]="loading" type="button" name="button" class="btn btn-default" *ngIf="!newPost" (click)="reload()"><span class="glyphicon glyphicon-repeat"></span>&nbsp;&nbsp;Reload</button>
